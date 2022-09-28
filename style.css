@@ -53,6 +53,7 @@ color: black;
 .main-content {
     /* background-color: yellow; */
     width: 95vw;
+    margin-left: 30px;
     padding: 20px;
 }
 
@@ -156,17 +157,39 @@ color: black;
     
 } */
 
-
+   .personal{
+    margin-top: 50px;
+   }
 
 .intro h1{
 text-align: center;
-margin: 12px;
+margin-top: 50px;
+}
+.intro{
+    display: flex;
+}
+ 
+.profile-img{
+    margin-left:300px;
+}
+
+.profile-img img{
+    border: 3px solid red;
+width: 200px;
+height:200px;
+border-radius: 50%;
+
+}
+.details-items{
+    /* padding: 10px 10px; */
+    font-weight: bold;
+    font-size: 1rem;
 }
  .intro p{
     margin: 12px 12px;
  }
  .skillContainer{
-    padding: 20px;
+    padding: 10px 45px;
  }
  .skills{
     width: 60px;
@@ -279,13 +302,21 @@ margin: 12px;
    
       .card img{
         
-        width: 400px;
+        width: 310px;
       }
    .menu{
     width: 45px;
     height: 45px;
    }
-
+    .fatherDetails{
+    
+         padding: 20px 20px;
+         text-align: left;
+    }
+    .profile-img{
+        padding: auto;
+        margin: auto;
+    }
    @media screen and (min-width:480px){
     .container {
         padding-top: 30px;
