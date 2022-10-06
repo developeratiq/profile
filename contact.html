@@ -30,29 +30,23 @@
           <img  class="cross" src="images/cross.png" alt="">
       </div>
          <div class="contact-form">
-            <form>
+            <form  method="post" action="https://formspree.io/f/xknebevl">
                 <h1>Contact me for work/ general enquiry  </h1>
                 <div class="mb-3">
                   <label for="clientEmail" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="clientEmail" name="Email" aria-describedby="emailHelp" required >
                   <div id="emailHelp" class="form-text">We'll never share your email and phone with anyone else.</div>
                 </div>
                 <div class="mb-3">
                   <label for="clientPhone" class="form-label">Phone</label>
-                  <input type="phone" class="form-control" id="clientPhone">
+                  <input type="phone" class="form-control"  id="clientPhone" name="clientPhone" required>
                 </div>
-              
-                  <div class="mb-3">
-                    <label for="clientEnquiry" class="form-label">Enquiry</label>
-                    <input type="text" class="form-control" id="clientEnquiry">
-                  </div>
                 <div class="mb-3">
-            
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="isClient">
-                  <label class="form-check-label" for="isClient">i want you to work on project with mme</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                    <label for="clientName" class="form-label">Name</label>
+                    <input type="text" class="form-control"  name="Name" id="clientName" required>
+                  </div>
+                  
+               <input  style="width: 100px;" type="submit" value="Send">
               </form>
          </div>
     </div>
