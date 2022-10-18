@@ -1,3 +1,8 @@
+$phone : 480px; //small 
+$tablet : 768px;//md
+$laptop : 1024px; //col-lg
+$desktop:1200px;//col-xl
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;1,200;1,300&family=Roboto+Slab:wght@100;300;500;600;700&display=swap');
 
 * {
@@ -37,7 +42,7 @@ color: black;
 
 .sidebargo{
     position: absolute;
-    transform: translate(-220px);
+    transform: translate(-260px);
  }
 
 .container {
@@ -48,6 +53,7 @@ color: black;
 .main-content {
     /* background-color: yellow; */
     width: 95vw;
+    margin-left: 30px;
     padding: 20px;
 }
 
@@ -110,6 +116,7 @@ color: black;
 /* contact form styling here */
 .contact-form{
     margin-left:60px;
+    padding-right: 20px;
 }
 .contact-form h1{
     margin-left: px;
@@ -150,17 +157,39 @@ color: black;
     
 } */
 
-
+   .personal{
+    margin-top: 50px;
+   }
 
 .intro h1{
 text-align: center;
-margin: 12px;
+margin-top: 50px;
+}
+.intro{
+    display: flex;
+}
+ 
+.profile-img{
+    margin-left:300px;
+}
+
+.profile-img img{
+    border: 3px solid red;
+width: 200px;
+height:200px;
+border-radius: 50%;
+
+}
+.details-items{
+    /* padding: 10px 10px; */
+    font-weight: bold;
+    font-size: 1rem;
 }
  .intro p{
     margin: 12px 12px;
  }
  .skillContainer{
-    padding: 20px;
+    padding: 10px 45px;
  }
  .skills{
     width: 60px;
@@ -200,8 +229,8 @@ margin: 12px;
    }
 
  .menu{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
  }
 
@@ -218,12 +247,12 @@ margin: 12px;
     transform: translate(-220px);
  }
  .card-container{
+
     border: 3px solid red;
  }
 
 .galleryContent{
-         
-        /* border: 3px solid black; */
+        
         display: flex;
         margin:40px 35px;
         justify-content: space-around;
@@ -231,65 +260,108 @@ margin: 12px;
 }
     .card {
         border-radius: 8px;
-        flex: 1;
-        margin: 30px;
-        width: 310px;
-        height :370px;
-        /* border: 2px solid blue; */
+         margin: 10px;
+        
         box-shadow: 0 0 20px #bac3c3;]
         
     }
     .card img {
-        width: 300px;
-        height: 290px;
+      width: 25vw;
+      
+    }
+
+
+    .card h2{
+        text-align: center;
+        
+
     }
 
 
 
 
-    @media screen and (max-width: 350px) {
-       .card{
-        padding: ;
-       }
-     
-   }
-
-
-
-
-
-
-
-
-
-
- @media screen and (max-width: 480px) {
-    /* .sidebar{
-        position: absolute;
-    transform: translate(-220px);
-    } */
+ @media screen and (max-width:480px) {
 
     .info-container{
        
         display: flex;
-        flex-direction: column;
-        padding-top: 150px;
+         margin-top: 15px;
     
     }
     .container {
-        /* display: flex;  */
-         padding:40px 20px;
+        /* height: 90vh; */
+        width: 95vw;
+         padding-top: 30px;
+         margin-left: -20px;
     }
-    
 
+   
+      .card img{
+        
+        width: 310px;
+      }
+
+      .dev-info{
+        padding-left: 5px;
+      }
+
+      .dev-pic img{
+        /* border: 3px solid red; */
+        margin-top: 30px;
+        height: 60vh;
+        width: 55vw;
+      
+      }
+
+
+      .hello{
+        font-size: 1.5rem;
+      }
+
+      .name{
+        font-size: 2rem;
+      }
+      .about{
+        font-size: 1rem;
+      }
+
+      .more-about{
+        font-size: 1rem;
+      }
+      
+
+       .button button{
+        height: 50px;
+        width: 140px;
+        margin-top: 5px;
+        font-size: 1rem;
+       }
+   .menu{
+    width: 45px;
+    height: 45px;
+   }
+    .fatherDetails{
+    
+         padding: 20px 20px;
+         text-align: left;
+    }
+    .profile-img{
+        padding: auto;
+        margin: auto;
+       
+    }
+  
+   
+     .skillContainer{
+        /* margin-top:250px; */
+     }
   
 
   @media screen and (max-width: 450px) {
-       /* body{
-        background-color: red;
-       } */
+       
     .button button{
         margin-top: 12px;
+       
     }
     .skill-items{
         width: 450px;
@@ -305,27 +377,14 @@ margin: 12px;
   }
   
   @media  screen and ( max-width: 600px){
-    /* .main-content {
-      
-        width: 8;
-        padding: 90px 10px;
-        width: 90vw;
-    } */
-
-    /* .intro{
-        margin-top:70px ;
-        padding: 10px;
-    } */
+   
 
     .card{
        
         padding: 20px 10px;
          
     }
-    .card img {
-      padding: 20px;
-      margin-left: 25px;
-    }
+  
 
     }
 
